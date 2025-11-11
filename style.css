@@ -1,0 +1,125 @@
+/* ALWAYS INCL THESE @ TOP OF CSS DOCUMENT */
+*   {
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #F9A8BF 0%, #F9F6EF 35.1%);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* END OF ALWAYS INCL */
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Starberry';
+    src: url(assets/fonts/StarberrySwirlDelight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url(../Crimson_Text/CrimsonText-Regular.ttf) format('truetype');
+}
+
+/* TEXT LAYOUT */
+
+.h1 {
+    font-family: 'Starberry';
+}
+
+.grid-parent-split {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.grid-parent-3  {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 30px;
+}
+
+/* COLOUR VARIABLES */
+
+.red {
+    color: #DB212C;
+}
+
+.yellow {
+    color: #FFE8A3;
+}
+
+.lightPink {
+    color: #F9A8BF;
+}
+
+.darkPink {
+    color: #F576A7;
+}
+
+.choco {
+    color: #923B10;
+}
+
+.brown {
+    color: #4D0803;
+}
+
+.offWhite {
+    color: #F9F6EF;
+}
+
+/* BUTTONS */
+
+/* .strawbutton {
+    /* the circular strawberry button 
+    that takes you back to the main menu */
+
+.box {
+	width: 600px;
+	height: 300px;
+	background-color: white;
+	border: 10px solid white;
+	box-shadow: inset 0 0 0 4px coral;
+}
+
+/* .strawbutton:hover { 
+    /* the circular strawberry button 
+    that takes you back to the main menu, 
+    but when you hover on it*/
+
+/* TO-DO LIST 
+#mainMenu
+- full pink bg
+- jam jar svg
+- menu nav clickable text
+- red circle doily svg
+
+#about
+- pink to white gradient bg
+- sticky nav?
+- red ellipse doily
+- starberry button
+- cutoff doily at bottom svg
+
+#artDirection
+- pink to white gradient bg
+- sticky nav?
+- red ellipse doily
+- jam jar svg
+- link to 15anni miiku fig
+- brown doily
+- green doily
+- pink doily
+- starberry button
+- cutoff doily at bottom svg
+
+*/
