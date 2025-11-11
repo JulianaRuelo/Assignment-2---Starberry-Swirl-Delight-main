@@ -27,13 +27,72 @@ img {
 
 @font-face {
     font-family: 'Crimson Text';
-    src: url(../Crimson_Text/CrimsonText-Regular.ttf) format('truetype');
+    src: url(assets/fonts/Crimson_Text/CrimsonText-Regular.ttf) format('truetype');
 }
 
 /* TEXT LAYOUT */
 
-.h1 {
+.primary-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    background: #F9F6EF;
+    padding: 15px 15px;
+    border-radius: 30px;
+    border: 10px solid #F9F6EF;
+    box-shadow: inset 0 0 0 1px #F576A7;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul:primary-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+ul li a {
+  display: block;
+  color: #4D0803;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #F576A7;
+}
+
+header  {
+    padding: 5vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
     font-family: 'Starberry';
+    font-size: 60px;
+    font-weight: 400;
+    padding-bottom: 5vw;
+}
+
+h3 {
+    font-family: 'Crimson Text';
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 2vw;
+}
+
+body {
+    font-family: 'Crimson Text';
+    font-size: 18px;
 }
 
 .grid-parent-split {
@@ -83,12 +142,14 @@ img {
     /* the circular strawberry button 
     that takes you back to the main menu */
 
-.box {
-	width: 600px;
-	height: 300px;
-	background-color: white;
-	border: 10px solid white;
-	box-shadow: inset 0 0 0 4px coral;
+.circleButton {
+	text-decoration: none;
+    color: #4D0803;
+    background: #FFB7B2;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 27px;
+    transition: background-color 0.5s;
 }
 
 /* .strawbutton:hover { 
