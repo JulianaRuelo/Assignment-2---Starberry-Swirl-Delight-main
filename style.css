@@ -8,7 +8,7 @@ body, html {
     margin: 0;
 }
 
-body {
+body{
     background: linear-gradient(180deg, #F9A8BF 0%, #F9F6EF 35.1%);
 }
 
@@ -30,19 +30,26 @@ img {
     src: url(assets/fonts/Crimson_Text/CrimsonText-Regular.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Crimson Text Bold';
+    src: url(assets/fonts/Crimson_Text/CrimsonText-Bold.ttf) format('truetype');
+}
+
 /* TEXT LAYOUT */
 
 .primary-nav {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    justify-content: center;
+    
     display: flex;
     gap: 40px;
     background: #F9F6EF;
     padding: 15px 15px;
     border-radius: 30px;
     border: 10px solid #F9F6EF;
-    box-shadow: inset 0 0 0 1px #F576A7;
+    box-shadow: inset 0 0 0 1px #F576A7, 2px 4px 5px rgba(77, 8, 3, 0.2);
 }
 
 h2, p {
@@ -51,15 +58,15 @@ h2, p {
 
 ul:primary-nav {
   list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  
+  display: inline-flexbox;
 }
 
 ul li a {
-  display: block;
+  display: grid;
+  place-items: center;
   color: #4D0803;
   padding: 14px 16px;
   text-decoration: none;
@@ -67,6 +74,27 @@ ul li a {
 
 ul li a:hover {
   color: #F576A7;
+}
+
+a:link {
+  text-decoration: none;
+  color: #4D0803;
+  transition: 0.3s;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #F576A7;
+  transition: 0.3s;
+}
+
+a:active {
+  text-decoration: none;
+  color: #4D0803;
 }
 
 header  {
@@ -78,16 +106,13 @@ header  {
 
 h1 {
     font-family: 'Starberry';
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 400;
-    padding-bottom: 5vw;
 }
 
 h3 {
-    font-family: 'Crimson Text';
+    font-family: 'Crimson Text Bold';
     font-size: 24px;
-    font-weight: 600;
-    padding-bottom: 2vw;
 }
 
 body {
@@ -104,6 +129,20 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 30px;
+}
+
+.wrapper {
+    max-width: 1275px;
+    margin: auto; 
+    /* centres the container */
+    padding: 80px;
+}
+
+bottomImg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
 
 /* COLOUR VARIABLES */
@@ -136,6 +175,10 @@ body {
     color: #F9F6EF;
 }
 
+.green {
+    color: #B9CB5F;
+}
+
 /* BUTTONS */
 
 /* .strawbutton {
@@ -143,14 +186,73 @@ body {
     that takes you back to the main menu */
 
 .circleButton {
+    font-family: 'Starberry';
+    font-size: 100px;
 	text-decoration: none;
-    color: #4D0803;
-    background: #FFB7B2;
-    padding: 8px 15px;
-    display: inline-block;
-    border-radius: 27px;
-    transition: background-color 0.5s;
+
+    line-height: 165px;
+    padding-right: 10px;
+    text-align: center;
+  
+    color: #DB212C;
+    background: #F9F6EF;
+    border-radius: 50%;
+    border: 10px solid #F9F6EF;
+    box-shadow: inset 0 0 0 1px #F576A7, 2px 4px 5px rgba(77, 8, 3, 0.2);
+
+    position: absolute;
+    right: 0px;
+    margin-bottom: auto;
+    width: 150px;
+    height: 150px;
+    display: inline;
+
+    transition: 0.3s;
 }
+
+.circleButton:hover {
+    font-family: 'Starberry';
+    font-size: 100px;
+	text-decoration: none;
+
+    line-height: 165px;
+    padding-right: 10px;
+    text-align: center;
+  
+    color: #B9CB5F;
+    background: #DB212C;
+    border-radius: 50%;
+    border: 10px solid #DB212C;
+    box-shadow: inset 0 0 0 1px #F9A8BF, 2px 4px 5px rgba(77, 8, 3, 0.2);
+
+    position: absolute;
+    right: 0px;
+    margin-bottom: auto;
+    width: 150px;
+    height: 150px;
+    display: inline;
+
+    transition: 0.3s;
+}
+
+/* .circleButton:hover {
+    font-family: 'Starberry';
+    font-size: 80px;
+	text-decoration: none;
+    text-align: center;
+    color: #B9CB5F;
+    background: #DB212C;
+    display: flex;
+    border-radius: 50%;
+    border: 10px solid #DB212C;
+    box-shadow: inset 0 0 0 1px #F9A8BF, 2px 4px 5px rgba(77, 8, 3, 0.2);
+
+    position: absolute;
+    right: 0px;
+    width: 150px;
+    height: 150px;
+    padding: 1px;
+} */
 
 /* .strawbutton:hover { 
     /* the circular strawberry button 
