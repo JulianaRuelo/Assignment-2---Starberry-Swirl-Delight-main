@@ -12,6 +12,14 @@ body{
     background: linear-gradient(180deg, #F9A8BF 0%, #F9F6EF 35.1%);
 }
 
+body.darkPink{
+    background: #F576A7;
+}
+
+body.lightPink{
+    background: #F9A8BF;
+}
+
 img {
     max-width: 100%;
 }
@@ -54,6 +62,7 @@ img {
 
 ul.primary-nav{
     text-decoration: none;
+    font-size: 30px;
     list-style-type: none;
     display: flex;
 }
@@ -62,6 +71,11 @@ ul.menu-nav {
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
+    padding: 0;
+}
+
+ul li.menu-nav {
+    line-height: 80%;
 }
 
 ul li a {
@@ -105,8 +119,16 @@ header  {
 
 h1 {
     font-family: 'Starberry';
-    font-size: 50px;
+    font-size: 5vw;
     font-weight: 500;
+}
+
+h1.primary-nav {
+    font-family: 'Starberry';
+    font-size: 60px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h2, p {
@@ -126,7 +148,7 @@ h4 {
 
 body {
     font-family: 'Crimson Text';
-    font-size: 20px;
+    font-size: 2vw;
     color:#4D0803;
 }
 
@@ -148,12 +170,35 @@ body {
     padding: 80px;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .backImg {
+    z-index: -1;
+}
+
+.frontImg {
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    z-index: 2;
+}
+
+/* .menuBackImg {
     position: absolute;
     left: 600px;
     top: 0px;
     z-index: -1;
-}
+} */
 
 /* COLOUR VARIABLES */
 
@@ -190,10 +235,6 @@ body {
 }
 
 /* BUTTONS */
-
-/* .strawbutton {
-    /* the circular strawberry button 
-    that takes you back to the main menu */
 
 .circleButton {
     font-family: 'Starberry';
