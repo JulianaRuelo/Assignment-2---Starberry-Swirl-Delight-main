@@ -35,16 +35,10 @@ img {
     src: url(assets/fonts/Crimson_Text/CrimsonText-Bold.ttf) format('truetype');
 }
 
-/* TEXT LAYOUT */
+/* TEXT & LAYOUT */
 
-.primary-nav {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    justify-content: center;
-    
-    display: flex;
-    gap: 40px;
+.primary-navBG {
+    text-align: center;
     background: #F9F6EF;
     padding: 15px 15px;
     border-radius: 30px;
@@ -52,24 +46,31 @@ img {
     box-shadow: inset 0 0 0 1px #F576A7, 2px 4px 5px rgba(77, 8, 3, 0.2);
 }
 
-h2, p {
-  margin: 10px;
+.vertAlign {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
 }
 
-ul:primary-nav {
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  display: inline-flexbox;
+ul.primary-nav{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+}
+
+ul.menu-nav {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
 }
 
 ul li a {
-  display: grid;
+  display: flex;
   place-items: center;
-  color: #4D0803;
+  color: #923B10;
   padding: 14px 16px;
   text-decoration: none;
+  list-style-type: none;
 }
 
 ul li a:hover {
@@ -78,7 +79,6 @@ ul li a:hover {
 
 a:link {
   text-decoration: none;
-  color: #4D0803;
   transition: 0.3s;
 }
 
@@ -94,7 +94,6 @@ a:hover {
 
 a:active {
   text-decoration: none;
-  color: #4D0803;
 }
 
 header  {
@@ -107,7 +106,11 @@ header  {
 h1 {
     font-family: 'Starberry';
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+h2, p {
+  margin: 10px;
 }
 
 h3 {
@@ -115,9 +118,16 @@ h3 {
     font-size: 24px;
 }
 
+h4 {
+    font-family: 'Crimson Text Bold';
+    font-size: 24px;
+    text-align: center;
+}
+
 body {
     font-family: 'Crimson Text';
-    font-size: 18px;
+    font-size: 20px;
+    color:#4D0803;
 }
 
 .grid-parent-split {
@@ -138,9 +148,9 @@ body {
     padding: 80px;
 }
 
-bottomImg {
+.backImg {
     position: absolute;
-    left: 0px;
+    left: 600px;
     top: 0px;
     z-index: -1;
 }
@@ -235,30 +245,6 @@ bottomImg {
     transition: 0.3s;
 }
 
-/* .circleButton:hover {
-    font-family: 'Starberry';
-    font-size: 80px;
-	text-decoration: none;
-    text-align: center;
-    color: #B9CB5F;
-    background: #DB212C;
-    display: flex;
-    border-radius: 50%;
-    border: 10px solid #DB212C;
-    box-shadow: inset 0 0 0 1px #F9A8BF, 2px 4px 5px rgba(77, 8, 3, 0.2);
-
-    position: absolute;
-    right: 0px;
-    width: 150px;
-    height: 150px;
-    padding: 1px;
-} */
-
-/* .strawbutton:hover { 
-    /* the circular strawberry button 
-    that takes you back to the main menu, 
-    but when you hover on it*/
-
 /* TO-DO LIST 
 #mainMenu
 - full pink bg
@@ -268,7 +254,6 @@ bottomImg {
 
 #about
 - pink to white gradient bg
-- sticky nav?
 - red ellipse doily
 - starberry button
 - cutoff doily at bottom svg
