@@ -20,6 +20,14 @@ body.lightPink{
     background: #F9A8BF;
 }
 
+body.offWhite{
+    background: #F9F6EF;
+}
+
+body.brown {
+    background: #4D0803;
+}
+
 img {
     max-width: 100%;
 }
@@ -52,12 +60,6 @@ img {
     border-radius: 30px;
     border: 10px solid #F9F6EF;
     box-shadow: inset 0 0 0 1px #F576A7, 2px 4px 5px rgba(77, 8, 3, 0.2);
-}
-
-.vertAlign {
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
 }
 
 ul.primary-nav{
@@ -94,6 +96,7 @@ ul li a:hover {
 a:link {
   text-decoration: none;
   transition: 0.3s;
+  color: #B9CB5F;
 }
 
 a:visited {
@@ -121,6 +124,7 @@ h1 {
     font-family: 'Starberry';
     font-size: 5vw;
     font-weight: 500;
+    line-height: 1.6;
 }
 
 h1.primary-nav {
@@ -129,6 +133,14 @@ h1.primary-nav {
     font-weight: 500;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+h1.doily {
+    font-family: 'Starberry';
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: 80%;
+    color:#DB212C;
 }
 
 h2, p {
@@ -141,15 +153,21 @@ h3 {
 }
 
 h4 {
-    font-family: 'Crimson Text Bold';
+    font-family: 'Crimson Text';
     font-size: 24px;
     text-align: center;
+}
+
+h5 {
+    font-family: 'Crimson Text Bold';
+    font-size: 20px;
 }
 
 body {
     font-family: 'Crimson Text';
     font-size: 2vw;
     color:#4D0803;
+    padding: auto;
 }
 
 .grid-parent-split {
@@ -193,12 +211,9 @@ body {
     z-index: 2;
 }
 
-/* .menuBackImg {
-    position: absolute;
-    left: 600px;
-    top: 0px;
+.bottomDoily {
     z-index: -1;
-} */
+}
 
 /* COLOUR VARIABLES */
 
@@ -251,8 +266,9 @@ body {
     border: 10px solid #F9F6EF;
     box-shadow: inset 0 0 0 1px #F576A7, 2px 4px 5px rgba(77, 8, 3, 0.2);
 
-    position: absolute;
-    right: 0px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
     margin-bottom: auto;
     width: 150px;
     height: 150px;
@@ -276,8 +292,9 @@ body {
     border: 10px solid #DB212C;
     box-shadow: inset 0 0 0 1px #F9A8BF, 2px 4px 5px rgba(77, 8, 3, 0.2);
 
-    position: absolute;
-    right: 0px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
     margin-bottom: auto;
     width: 150px;
     height: 150px;
@@ -285,6 +302,8 @@ body {
 
     transition: 0.3s;
 }
+
+
 
 /* TO-DO LIST 
 #mainMenu
