@@ -60,6 +60,7 @@ img {
     border-radius: 30px;
     border: 10px solid #F9F6EF;
     box-shadow: inset 0 0 0 1px #F576A7, 2px 4px 5px rgba(77, 8, 3, 0.2);
+    width: fit-content;
 }
 
 ul.primary-nav{
@@ -120,6 +121,18 @@ header  {
     align-items: center;
 }
 
+.header_faux {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  background: #F9F6EF;
+
+  padding: 3vw 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
 h1 {
     font-family: 'Starberry';
     font-size: 5vw;
@@ -137,7 +150,7 @@ h1.primary-nav {
 
 h1.doily {
     font-family: 'Starberry';
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 500;
     line-height: 80%;
     color:#DB212C;
@@ -165,7 +178,7 @@ h5 {
 
 body {
     font-family: 'Crimson Text';
-    font-size: 2vw;
+    font-size: 1.5vw;
     color:#4D0803;
     padding: auto;
 }
@@ -205,13 +218,13 @@ body {
 }
 
 .frontImg {
-    position: absolute;
-    left: 150px;
-    top: 0px;
     z-index: 2;
 }
 
 .bottomDoily {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
     z-index: -1;
 }
 
