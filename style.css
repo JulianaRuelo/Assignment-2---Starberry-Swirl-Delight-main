@@ -176,6 +176,14 @@ h5 {
     font-size: 20px;
 }
 
+h6 {
+    font-family: 'Starberry';
+    font-size: 3vw;
+    font-weight: 500;
+    text-shadow: 1px 2px 3px rgba(77, 8, 3, 0.7);
+    text-align: center;
+}
+
 body {
     font-family: 'Crimson Text';
     font-size: 1.5vw;
@@ -226,6 +234,12 @@ body {
     width: 100%;
     height: auto;
     z-index: -1;
+}
+
+.bottomText {
+    font-family: 'Crimson Text';
+    font-size: 3vw;
+    padding-top: 40%;
 }
 
 /* COLOUR VARIABLES */
@@ -316,7 +330,23 @@ body {
     transition: 0.3s;
 }
 
+.berryButton {
+    src: "assets/delicious.svg";
 
+    line-height: 165px;
+    padding-right: 10px;
+    text-align: center;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    margin-bottom: auto;
+    width: 150px;
+    height: 150px;
+    display: inline;
+
+    transition: 0.3s;
+}
 
 /* TO-DO LIST 
 #index
