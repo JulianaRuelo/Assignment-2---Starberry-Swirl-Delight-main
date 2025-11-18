@@ -152,7 +152,7 @@ h1.doily {
     font-family: 'Starberry';
     font-size: 4vw;
     font-weight: 500;
-    line-height: 80%;
+    /* line-height: 80%; */
     color:#DB212C;
 }
 
@@ -179,8 +179,11 @@ h5 {
 h6 {
     font-family: 'Starberry';
     font-size: 3vw;
-    font-weight: 500;
+    font-weight: 200;
+    color:#B9CB5F;
     text-shadow: 1px 2px 3px rgba(77, 8, 3, 0.7);
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -331,20 +334,10 @@ body {
 }
 
 .berryButton {
-    src: "assets/delicious.svg";
 
-    line-height: 165px;
-    padding-right: 10px;
-    text-align: center;
-
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    margin-bottom: auto;
-    width: 150px;
-    height: 150px;
-    display: inline;
-
+    min-width: 20%;
+    height: auto;
+    display: flex;
     transition: 0.3s;
 }
 
