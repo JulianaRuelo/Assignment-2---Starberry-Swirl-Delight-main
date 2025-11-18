@@ -97,7 +97,6 @@ ul li a:hover {
 a:link {
   text-decoration: none;
   transition: 0.3s;
-  color: #B9CB5F;
 }
 
 a:visited {
