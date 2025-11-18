@@ -242,7 +242,12 @@ body {
 .bottomText {
     font-family: 'Crimson Text';
     font-size: 3vw;
-    padding-top: 40%;
+    padding-top: 50%;
+}
+
+.deliContainer {
+    position: relative;
+    
 }
 
 /* COLOUR VARIABLES */
@@ -334,25 +339,36 @@ body {
 }
 
 .berryButton {
-
-    min-width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 10vw;
     height: auto;
     display: flex;
+    margin-bottom: 10%;;
     transition: 0.3s;
+}
+
+/* 
+I got the code below from a reddit post, specifically Outrageous_Whole_142's reply to Comrade750 and Ekks-O
+https://www.reddit.com/r/css/comments/18lyw0g/comment/m312ifl/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button */
+
+#imgHover{
+  display:none;
+}
+
+#imgDiv:hover #imgRegular{
+  display:none;
+}
+
+#imgDiv:hover #imgHover{
+  display:block;
 }
 
 /* TO-DO LIST 
 #index
 - align jam jar, doily and text properly
-
-#about
-- starberry button in bottom doily
-- fix font size in bottom doily
-
-#artDirection
-- starberry button in bottom doily
-- fix font size in bottom doily
-- fix text alignment beside jam jar
 
 #naturalHabitat
 - fix delicious text placement
