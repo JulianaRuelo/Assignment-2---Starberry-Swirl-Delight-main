@@ -156,6 +156,15 @@ h1.doily {
     color:#DB212C;
 }
 
+h1.delicious {
+    font-family: 'Starberry';
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: 1.6;
+    color:#F9A8BF;
+    text-shadow: 1px 2px 3px rgba(77, 8, 3, 0.7);
+}
+
 h2, p {
   margin: 10px;
 }
@@ -243,11 +252,6 @@ body {
     font-family: 'Crimson Text';
     font-size: 3vw;
     padding-top: 50%;
-}
-
-.deliContainer {
-    position: relative;
-    
 }
 
 /* COLOUR VARIABLES */
